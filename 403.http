@@ -1,0 +1,18 @@
+HTTP/1.1 403 OK
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<head>
+<title>Ow! -- reddit.com</title>
+</head>
+<body style="text-align: center">
+
+<img src="http://www.reddit.com/static/youbrokeit3.png">
+<br style="clear: both"/>
+<div style="margin: auto; display: inline-block">
+
+<h2 style="color: red; font-size: 200%;">
+You appear to be a bad robot.  Check out <a href="http://code.reddit.com/wiki/API">the rules for robots</a>.  Thanks.
+</h2>
+</body>
+</html>

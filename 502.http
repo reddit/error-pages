@@ -1,0 +1,18 @@
+HTTP/1.1 502 OK
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<head>
+<title>Ow! -- reddit.com</title>
+</head>
+<body style="text-align: center">
+
+<img src="http://www.reddit.com/static/youbrokeit1.png">
+<br style="clear: both"/>
+<div style="margin: auto; display: inline-block">
+
+<h2 style="color: red; font-size: 200%;">
+Our servers did something nasty and the proxy didn't like it.
+</h2>
+</body>
+</html>
