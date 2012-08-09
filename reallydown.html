@@ -20,15 +20,17 @@ Content-Type: text/html; charset=UTF-8
 }
 
 html { overflow:hidden; }
-body { font: 60px 'SilkscreenNormal', Arial, sans-serif; letter-spacing:0; background:#25d; color:#fff; }
-
-/* Thanks, http://www.colorzilla.com/gradient-editor/ */
-#container {
+body { font: 60px 'SilkscreenNormal', Arial, sans-serif; letter-spacing:0; margin:0; overflow:hidden; background:#25d; color:#fff; }
+html, body, #container {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+/* Thanks, http://www.colorzilla.com/gradient-editor/ */
+#container {
 	background: #083a7f;
 	background: -moz-linear-gradient(top, #083a7f 0%, #242b3d 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#083a7f), color-stop(100%,#242b3d));
