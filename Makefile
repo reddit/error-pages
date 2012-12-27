@@ -6,5 +6,8 @@ all: $(ERROR_FILES)
 %.http: %.html
 	python make-error-page.py $< > $@
 
+504.reallydown.http: 504.reallydown.html
+	python make-error-page.py --no-compress $< > $@
+
 clean:
 	rm -f $(ERROR_FILES)
