@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>Ow! -- reddit.com</title>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    var domainname = document.location.hostname;
+    _gaq.push(
+        ['_setAccount', 'UA-12131688-1'],
+        ['_setDomainName', domainname],
+        ['_trackEvent', 'Error', 'CF5XX', 'page: ' + document.location.pathname + document.location.search, 0, true]
+    );
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    var statsUrl = 'https://stats.redditmedia.com';
+     
+    function makeRequest(url, data) {
+      var dataString;
+     
+      try {
+        dataString = JSON.stringify(data);
+      } catch (e) {
+        return false;
+      }
+     
+      if (window.XMLHttpRequest) {
+        httpRequest = new XMLHttpRequest();
+      } else if (window.ActiveXObject) {
+        try {
+          httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+        } 
+        catch (e) {
+          try {
+            httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+          } 
+          catch (e) {}
+        }
+      }
+     
+      if (!httpRequest) {
+        return false;
+      }
+     
+      httpRequest.open('POST', url);
+      httpRequest.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+      httpRequest.send(dataString);
+    }
+     
+    var data = {
+      cdnError: {
+        error50x: 1,
+      }
+    }
+     
+    makeRequest(statsUrl, data);
+  </script>
+<style>
+body{text-align:center;position:absolute;top:50%;margin:0;margin-top:-275px;width:100%}
+h2,h3{color:#555;font:bold 200%/100px sans-serif;margin:0}
+h3{color:#777;font:normal 150% sans-serif}
+</style>
+</head>
+<img src=//s3.amazonaws.com/redditstatic/heavy-load.png alt="">
+<h2>our cdn was unable to reach our servers</h2>
+<h3 style="display: none;">::CLOUDFLARE_ERROR_500S_BOX::</h3>
+<h3 style="display: none;">::CLOUDFLARE_ERROR_1000S_BOX::</h3>
+
