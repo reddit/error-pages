@@ -7,6 +7,7 @@ import sys
 
 REASON_PHRASES = {
     403: "Forbidden",
+    451: "Unavailable For Legal Reasons",
     502: "Bad Gateway",
     503: "Service Unavailable",
     504: "Gateway Timeout",
