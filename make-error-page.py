@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 import argparse
 import os
@@ -11,7 +12,7 @@ REASON_PHRASES = {
     451: "Unavailable",
     502: "Bad Gateway",
     503: "Service Unavailable",
-    504: "Gateway Timeout",
+    504: "Gateway Timeout"
 }
 
 
