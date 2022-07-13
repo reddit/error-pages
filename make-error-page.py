@@ -8,6 +8,7 @@ import sys
 REASON_PHRASES = {
     400: "Bad Request",
     403: "Forbidden",
+    418: "I'm a teapot",
     451: "Unavailable",
     502: "Bad Gateway",
     503: "Service Unavailable",
